@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images\select_all.svg" type="image/svg+xml">
+    <title>My Blog</title>
+  </head>
+  <style>
+    .container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 5px;
+    }
+
+    .bg-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    z-index: -1;
+    }
+
+    .textBox {
+    color: #fffff6;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 600;
+    }
+    .dropdown {
+      position: absolute;
+      display: none;
+      top: 100%;
+      left: 0;
+      background-color: antiquewhite;
+      box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+      border: 1px solid #97b3ce;
+    }
+
+    .dropdown ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .dropdown ul li {
+      border-bottom: 1px solid #ccc;
+    }
+
+    .dropdown ul li a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: #1d4880;
+    }
+
+    .dropdown ul li a:hover {
+      background-color: #f0f0f0;
+    }
+
+    header nav ul li {
+      position: relative;
+    }
+
+    header nav ul li:hover .dropdown {
+      display: block;
+    }
+  </style>
+  <body>
+    <header>
+        <div class="container">
+          <img class="imgset bg-mask" src="images\Background.JPG" alt="">
+          <div class="textBox">柏亨的個人網站</div>
+        </div>
+      <nav>
+        <ul>
+          <li><a href="#">首頁</a></li>
+          <li><a href="#" target="_blank">購物</a></li>
+          <li><a>網站推薦</a>
+            <div class="dropdown">
+              <ul>
+                <li><a target="_blank" href="https://www.youtube.com/channel/UCc4aY4tuZU5H0OPKwsR6YBg/">安平鎮工所</a></li>
+                <li><a target="_blank" href="https://sites.google.com/site/whlee1990/">隔壁生科教室</a></li>
+                <li><a target="_blank" href="https://nxit.darrin.idv.tw/">隔壁資訊教室</a></li>
+                <li><a target="_blank" href="https://ardublockly.ymtech.education/ardublockly/">ardublockly</a></li>
+                <li><a target="_blank" href="https://www.youtube.com/@ItzDENKO">蛋糕Ken的YouTube</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="../about me/index.html" target="_blank">關於作者</a></li>
+          <li><a>聯絡我</a>
+            <div class="dropdown">
+              <ul>
+                <li><a target="_blank" href="https://www.instagram.com/06jiang/">instagram-本帳</a></li>
+                <li><a target="_blank" href="https://www.instagram.com/fei._06/">instagram-生活</a></li>
+                <li><a target="_blank" href="https://line.me/ti/p/WxNOnmHC3F">Line</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  <div>
+    <main>
+      <article>
+        <h2>XX專欄</h2>
+        <p class="postdate">
+          <time datetime="2024-06-03">
+            2024 / 06 / 03
+          </time>
+        </p>
+        <section>
+          <h3>主題</h3>
+        </section>
+      </article>
+    </main>
+    <aside>
+      <nav class="categoryNav">
+        <h2>不一樣的知識</h2>
+        <ul>
+          <li><a href="https://youtube.com/playlist?list=PLMp8l3TpQMAPC1O6K-ZKX4ul7EZ9_Vt6J&si=Om1phzE2Cs-Xl2P_" target="_blank">Fusion360教學</a></li>
+          <li><a href="https://youtube.com/playlist?list=PLMp8l3TpQMAOY_-V-9G29vGyCQ4B7aJ6z&si=RUaNnlMTszrwwQx3" target="_blank">雷切機使用</a></li>
+          <li><a href="https://youtube.com/playlist?list=PLMp8l3TpQMAM9UjJTxG4n2OL1-5F5WfGr&si=kVCgCxLLpPDtOpY1" target="_blank">FDM 3D列印機維修/使用</a></li>
+          <li><a href="#" target="_blank">Arduino基本操作</a></li>
+          <li><a href="https://youtube.com/playlist?list=PLMp8l3TpQMAPXS6j6UYjorkyu_Q07ympn&si=CSkDxRFQpjgWP_f9" target="_blank">第一屆THJCC CTF題解</a></li>
+        </ul>
+      </nav>
+      <nav class="recentNav">
+        <h2>新聞分享</h2>
+        <ul>
+          <li><a>來早了，這裡什麼都沒有</a></li>
+        </ul>
+      </nav>
+      <p>
+        <a>屏東火車站<img src="images/IMG_9486.png" alt=""></a>
+      </p>
+    </aside>
+  </div>
+    <footer>
+      <p><small>製作參考: 小水豚教你做網站!</small></p>
+    </footer>
+  </body>
+</html>

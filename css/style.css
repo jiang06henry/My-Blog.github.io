@@ -1,0 +1,216 @@
+@charset "utf-8";
+body {
+    background-color: #e8eceb;
+    font-family: 'Verdana', 'Hiragon Sans', 'Meiryo', sans-serif;
+    margin: 0;
+    padding: 3% 0 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    max-width: 1054px;
+    margin: 0 auto 40px;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 2px solid #97b3ce;
+    border-bottom: 2px solid #97b3ce;
+    background-color: #ccd9e2;
+    padding: 12px 0;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+header nav ul li {
+    text-align: center;
+}
+
+header nav ul li a {
+    font-size: 20px;
+    color: #1d4880;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline double;
+}
+
+div {
+    max-width: 1054px;
+    margin: 0 auto 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+    flex: 1 1 45%;
+    background-color: #fffff6;
+    border-radius: 16px;
+    padding: 3%;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.16);
+    margin-bottom: 24px;
+    max-width: 750px;
+    justify-content: space-between;
+}
+
+aside {
+    flex: 1 1 30%;
+    max-width: 284px;
+    width: 100%;
+}
+
+aside nav {
+    border-radius: 16px;
+    background-color: #fffff6;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.16);
+    padding: 24px 28px;
+    margin-bottom: 24px;
+}
+
+aside nav h2 {
+    margin-bottom: 18px;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #1d4880;
+}
+
+aside nav ul {
+    font-size: 1.1em;
+}
+
+.categoryNav ul li {
+    list-style-type: square;
+    color: #1d4880;
+    margin: 0 0 16px 20px;
+}
+
+.categoryNav ul li a {
+    color: #333333;
+    text-decoration: none;
+}
+.categoryNav ul li a:hover {
+    text-decoration: underline double;
+}
+
+.recentNav ul li {
+    border-bottom: 1px solid #7c5b48;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+article h2 {
+    font-size: 2.5em;
+    font-weight: 500;
+    color: #2caec5;
+}
+
+time {
+    background-color: #2caec5;
+    border-radius: 0px 16px 16px 16px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #fffff6;
+    padding: 10px;
+    display: inline-block;
+}
+
+.postdate {
+    margin-bottom: 20px;
+}
+
+.eyecatch {
+    margin-bottom: 20px;
+}
+
+article h3 {
+    border-bottom: 2px solid #2caec5;
+    margin-bottom: 20px;
+    font-size: 1.75em;
+    font-weight: 600;
+}
+
+article section p {
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+img{
+    width: 284px;
+    border-radius: 15px;
+}
+article section {
+    margin-bottom: 50px;
+    color: #2caec5;
+}
+
+footer {
+    background-color: #373737;
+    color: #fffff6;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 5px 10px 5px;
+    width: 100%;
+}
+/* 下拉選單樣式 */
+.dropdown {
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-25%); /* 將下拉選單水平置中對齊 */
+    background-color: antiquewhite;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border: 1px solid #1d4880;
+    padding: 0;
+    white-space: nowrap; /* 防止下拉選單內部項目換行 */
+}
+
+.dropdown ul {
+    list-style-type: none;
+    display: flex;  /* 使用flexbox水平排列 */
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown ul li {
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown ul li a {
+    display: block;
+    padding: 10px 15px;  /* 增加水平間距 */
+    text-decoration: none;
+    color: #1d4880;
+    text-align: center;  /* 文字置中 */
+    flex: 1; /* 讓項目均勻分布 */
+}
+
+.dropdown ul li a:hover {
+    background-color: #f0f0f0;
+}
+
+/* 父級元素懸停顯示下拉選單 */
+header nav ul li {
+    position: relative;
+}
+
+header nav ul li:hover .dropdown {
+    display: flex; /* 顯示並使用 flexbox */
+    align-items: center; /* 垂直居中對齊 */
+    justify-content: center; /* 水平居中對齊 */
+}
+
+div aside p a {
+    color: #1d4880;
+    font-size: 1.4em;
+    font-weight: bold;
+}
